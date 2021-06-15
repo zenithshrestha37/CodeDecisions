@@ -285,12 +285,14 @@ switch (letterGrade) {
 */
 
 for (let i = 1;i <= 100;i++) {
-  if (i % 3 === 0) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('devmountain')
+  }  else if (i % 3 === 0) {
     console.log('dev')
   } else if (i % 5 === 0) {
     console.log('mountain')
-  } else if (i % 3 === 0 && i % 5 === 0) {
-    console.log('devmountain')
+  } else if (i % 3 === 0) {
+    console.log('dev')
   } else {
     console.log(i)
   }
